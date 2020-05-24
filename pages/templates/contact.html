@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>This is contact page, {{ request.user }}</h1>
+
+<ul>
+{% for item in list %}
+   
+
+    <li>{{ item }}</li>
+
+
+{% endfor %} 
+</ul>
+<p>{{ namber }},{{list}}</p>
+{% endblock %}
